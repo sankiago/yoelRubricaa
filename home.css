@@ -1,0 +1,236 @@
+body
+{
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; /*mozilla*/
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+.header
+{
+    height: 16vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.header__titleWrapper
+{
+    height: 100%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.header__title
+{
+    font-size: 6vh;
+    color: white;
+    margin: 0;
+}
+
+/* PROFESORA---------------------------------------------------------------------------- */
+.profile
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 84vh;
+}
+
+.profileWrapper
+{
+    display: flex;
+}
+
+.profile__img
+{
+    width: 24vw;
+    height: 24vw;
+    border-radius: 12vw;
+    object-fit: cover;
+}
+
+.profile__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3vw;
+}
+
+
+.profile__name
+{
+    font-size: 5vw;
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.profile__description
+{
+    font-size: 0.8vw;
+}
+
+.line-break
+{
+    margin: 0.4vh 0;
+    font-size: 1.2vw;
+
+}
+/* TEMAS ---------------------------------------------------------------------------------*/
+
+.box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background-color: black;
+    color: white
+}
+
+.boxWrapper{
+height: 100vh;
+width: 90vw;
+}
+
+.box__header
+{
+    font-size: 4vw;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+.box__header p
+{
+    margin: 0;
+    font-size: 1.4vw;
+}
+
+.box__header h3
+{
+    margin: 0;
+    border-bottom-style: solid;
+    margin-bottom: 1vh;
+}
+.box__content
+{
+    margin-top: 10vh;;
+}
+
+.lst__title.lvl1
+{
+    font-size: 1.6vw;
+}
+
+.lst__title.lvl1:focus
+{
+    outline: none;
+}
+
+.lst__item.lvl1
+{
+    padding: 1vh 4vw;
+    border-color: white;
+    border-style: solid;
+    border-radius: 4vw;
+}
+
+.lst__content.lvl1
+{
+    font-size: 1.3vw;
+}
+
+/* ESTUDIANTES -------------------------------------------------------------------------- */
+.students{
+    display: flex;
+    justify-content: space-around;
+    padding: 9vh 0;
+}
+
+.studentWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    padding: 3vh 1vw;
+    border-radius: 2vw;
+    background-color: white;
+    color: black;
+}
+
+.student__img
+{
+    border-radius: 100%;
+    height: 15vw;
+    width: 15vw;
+    object-fit: cover;
+}
+
+.student__name
+{
+    margin: 2vh 0;
+    font-size: 2vw;
+}
+
+.student__description
+{
+    font-size: 1.5vw;
+    margin: 1vh 0;
+    
+}
+
+.student__description a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.student__description a:hover
+{
+    text-decoration: underline;
+}
+
+.student__letter
+{  
+    font-size: 1.25vw;
+}
+
+/* FOOTER ------------------------------------------------------------------------- */
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+.footer p
+{
+    font-family: 'VT323', monospace;
+}
+
+.footer a
+{
+    color:white;
+    text-decoration: none;
+}
+
+/* Footer hover */
+
+.footer span:hover
+{
+    color: tomato;
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
