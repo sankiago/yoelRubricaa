@@ -1,3 +1,8 @@
+li img
+{
+    width: 17vw;
+}
+
 body
 {
     font-family: 'DM Sans', Helvetica, sans-serif;
@@ -85,6 +90,35 @@ body::-webkit-scrollbar
 }
 /* TEMAS ---------------------------------------------------------------------------------*/
     /*Contenedora de details*/
+        .centrado-a-la-fuerza
+        {
+            margin: auto;
+        }
+
+        .column
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0
+        }
+
+        .row-spacebetween
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .sub
+        {
+            background-color: black;
+            color: white;
+            border-radius: 5vw;
+            padding: 0.4vw;
+        }
+
         .box
         {
             display: flex;
@@ -144,7 +178,20 @@ body::-webkit-scrollbar
         background-color: white;
         color: black
     }
-        /*Titulo de primer nivel*/
+
+    .last
+    {
+        padding-bottom: 2vh;
+        border-bottom: solid;
+        margin-bottom: 2vh;
+    }
+
+    .lst__item
+    {
+        display: flex;
+        justify-content: center;
+    }
+        /*Titulos*/
         .lst__title.lvl1
         {
             font-size: 1.6vw;
@@ -153,17 +200,24 @@ body::-webkit-scrollbar
 
         .titleMargin-open
         {
-            margin: 6vh 0px;
+            margin-bottom: 6vh;
         }
 
-        .lst__title.lvl1:focus
+        .lst__title:focus
         {
             outline: none;
         }
 
+        .lst__title.lvl2
+        {
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            font-weight: bold;
+        }
 
 
-        /*Contenido de los temas de primer nivel*/
+
+        /*Contenido de los temas*/
         .lst__content.lvl1
         {
             font-size: 1.3vw;
@@ -183,22 +237,62 @@ body::-webkit-scrollbar
 
         .lst__content.lvl1 li
         {
-            margin: 4vh 0;
+            margin: 2vh 0;
         }
+
+        .quote
+        {
+            font-style: italic;
+            text-align: center;
+        }
+
+        .steps
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center ;
+        }
+
+        .steps p
+        {
+            width: min-content;
+        }
+
+
+.AudioPlayer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.AudioPlayer h3
+{
+    font-size: 1.25vw;
+}
 
 .btn
 {
+    width: 11vw;
+    height: 4vh;
+    margin: 3vh 0;
+    padding: 0.5vh 2vw;
+
+    align-self: flex-end;
+
     background-color: black;
     color: white;
     border-radius: 5vw;
-    font-family: 'DM Sans';
     border-color: white;
+
+    font-family: 'DM Sans';
     border-style: solid;
-    align-self: flex-end;
-    padding: 0.5vh 2vw;
-    width: 11vw;
-    height: 4vh;
-    margin: 3vh 0
+    font-size: 1.1vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ESTUDIANTES -------------------------------------------------------------------------- */
