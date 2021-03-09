@@ -21,28 +21,40 @@ function script ()
     //funcion que maneja las listas
     function manejador()
     {
-        console.log('oprimidoxd')
-        listasArray.forEach((lista) => {
-/*         const titulo = lista.querySelector('.lst__title.lvl1')
- */        lista.open = false 
-        })
-
-        /* console.log(this.parentElement.open)
-
+        //Cerrando todo
+        cerrarTodo();
+        
+        //Cambiando los colores de la lista
         if (this.parentElement.open)
         {
             this.parentElement.classList.remove('open')
         }
         else {
-            this.classList.parentElement.classList.add('open')
-        } */
+            this.parentElement.classList.add('open')
+            this.classList.add('titleMargin-open')
+        }
+
+        //Cambiando el estilo del título
     }
+
 
 
     //manejando el boton cerrar todo
     const btn = document.querySelector('.btn')
-    btn.addEventListener('mouseup', manejador)
+    btn.addEventListener('mouseup', cerrarTodo)
 
+    function cerrarTodo()
+    {
+        listasArray.forEach((lista) => {
+            const titulo = lista.querySelector('.lst__title.lvl1')
+            lista.open = false 
+            lista.classList.remove('open')
+
+            titulo.classList.remove('titleMargin-open')
+
+            console.log('oprimidoxd')
+        })
+    }
 
     //Efectos para los estudiantes
         //Traer students elements del DOM
