@@ -90,6 +90,13 @@ body::-webkit-scrollbar
 }
 /* TEMAS ---------------------------------------------------------------------------------*/
     /*Contenedora de details*/
+        .center_container
+        {
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
         .centrado-a-la-fuerza
         {
             margin: auto;
@@ -117,6 +124,16 @@ body::-webkit-scrollbar
             color: white;
             border-radius: 5vw;
             padding: 0.4vw;
+            margin-bottom: 1vh;
+        }
+
+        .mail
+        {
+            font-family: 'Schoolbell', cursive;
+            letter-spacing: 0.1vw;
+            border: solid;
+            padding: 4vw;
+            border-radius: 2vw;
         }
 
         .box
@@ -176,7 +193,8 @@ body::-webkit-scrollbar
     .open
     {
         background-color: white;
-        color: black
+        color: black;
+        padding: 7vh 4vw !important;
     }
 
     .last
