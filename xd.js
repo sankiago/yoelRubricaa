@@ -15,7 +15,7 @@ function script ()
     console.log(listasArray)
     listasArray.forEach((lista) => {
         const titulo = lista.querySelector('.lst__title.lvl1')
-        titulo.addEventListener('mouseup', manejador)
+        titulo.addEventListener('click', manejador)
     });
     
     //funcion que maneja las listas
